@@ -47,7 +47,7 @@ def write_icon(path: str, size: int, rgba=(230, 0, 0, 255)):
 
 
 def main():
-    base = os.path.join(os.path.dirname(__file__), "..", "youtube-hide-rich-sections", "icons")
+    base = os.path.join(os.path.dirname(__file__), "..", "betterweb", "icons")
     write_icon(os.path.join(base, "16.png"), 16, (230, 0, 0, 255))
     write_icon(os.path.join(base, "48.png"), 48, (230, 0, 0, 255))
     write_icon(os.path.join(base, "128.png"), 128, (230, 0, 0, 255))
@@ -56,4 +56,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
