@@ -1,4 +1,7 @@
-YouTube Hide Rich Sections (Chrome Extension)
+BetterWeb (Chrome Extension)
+
+Why and What?
+- Just improves your UX in youtube, maybe in the future will add other features.
 
 Overview
 - Hides YouTube homepage “rich section” rows by targeting `#content.ytd-rich-section-renderer`.
@@ -8,11 +11,11 @@ Overview
 Manual Install (Unpacked)
 1. Open `chrome://extensions`.
 2. Enable Developer mode (top-right).
-3. Click Load unpacked and select the `youtube-hide-rich-sections` folder.
+3. Click Load unpacked and select the extension folder.
 4. Open YouTube; the targeted rows will be hidden automatically.
 
 Store Listing Text (copy/paste)
-- Name: Hide YouTube Rich Sections (Unofficial)
+- Name: BetterWeb
 - Short description: Hides YouTube homepage “rich section” rows automatically, including dynamically loaded content.
 - Full description:
   Hide YouTube’s rich section rows on the homepage. The extension removes elements matching `#content.ytd-rich-section-renderer` and keeps them hidden as the page updates.
