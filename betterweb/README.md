@@ -6,7 +6,8 @@ Just improves your UX in YouTube. Additional features may be added in the future
 
 ## Overview
 
-- Hides YouTube homepage "rich section" rows by targeting `#content.ytd-rich-section-renderer`
+- Hides YouTube homepage "rich section" rows and Shorts shelves
+- Targets `#content.ytd-rich-section-renderer` and `ytd-reel-shelf-renderer` (plus related elements)
 - Observes DOM mutations so newly loaded sections are hidden too
 - Runs at `document_start` for earlier hiding
 
@@ -20,10 +21,10 @@ Just improves your UX in YouTube. Additional features may be added in the future
 ## Store Listing Text (copy/paste)
 
 - **Name:** BetterWeb
-- **Short description:** Hides YouTube homepage "rich section" rows automatically, including dynamically loaded content.
+- **Short description:** Hides YouTube homepage "rich section" rows and Shorts shelves automatically, including dynamically loaded content.
 - **Full description:**
 
-  Hide YouTube's rich section rows on the homepage. The extension removes elements matching `#content.ytd-rich-section-renderer` and keeps them hidden as the page updates.
+  Hide YouTube's rich section rows and Shorts shelves on the homepage. The extension removes elements matching `#content.ytd-rich-section-renderer`, `ytd-reel-shelf-renderer` (and related elements) and keeps them hidden as the page updates.
 
   **Highlights:**
   - Runs automatically on YouTube pages

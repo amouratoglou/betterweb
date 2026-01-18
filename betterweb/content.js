@@ -1,7 +1,14 @@
 const hide = () => {
-  document
-    .querySelectorAll('#content.ytd-rich-section-renderer')
-    .forEach((e) => (e.style.display = 'none'));
+  const selectors = [
+    '#content.ytd-rich-section-renderer',
+    'ytd-reel-shelf-renderer',
+    '.style-scope.ytd-reel-shelf-renderer'
+  ];
+  selectors.forEach((sel) => {
+    document.querySelectorAll(sel).forEach((e) => {
+      e.style.display = 'none';
+    });
+  });
 };
 
 const setup = () => {
