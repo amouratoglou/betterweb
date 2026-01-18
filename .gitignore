@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Node/JS common (future tooling)
+node_modules/
+dist/
+
+# Archives
+*.zip
+
