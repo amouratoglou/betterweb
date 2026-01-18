@@ -28,17 +28,22 @@ jobs:
         run: |
           cd betterweb
           zip -r ../betterweb-${{ steps.ver.outputs.version }}.zip .
+          zip -r -X ../betterweb-${{ steps.ver.outputs.version }}-webstore.zip *
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: betterweb-${{ steps.ver.outputs.version }}
-          path: betterweb-${{ steps.ver.outputs.version }}.zip
+          path: |
+            betterweb-${{ steps.ver.outputs.version }}.zip
+            betterweb-${{ steps.ver.outputs.version }}-webstore.zip
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: betterweb-${{ steps.ver.outputs.version }}.zip
+          files: |
+            betterweb-${{ steps.ver.outputs.version }}.zip
+            betterweb-${{ steps.ver.outputs.version }}-webstore.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
