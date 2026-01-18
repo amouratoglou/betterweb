@@ -30,7 +30,7 @@ Privacy
 - This extension does not collect, transmit, or store any personal data. It operates entirely as a content script on `youtube.com` and does not communicate with external services.
 
 Support
-- GitHub Issues: https://github.com/yourname/youtube-hide-rich-sections/issues (replace with your repo URL)
+- GitHub Issues: https://github.com/amouratoglou/betterweb/issues
 - Alternatively, enable Discussions and use Q&A.
 
 Files
